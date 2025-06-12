@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perjalanan Pendidikan</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px 30px;
+      border-bottom: 4px dashed white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e91e63;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff85c1;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 150px);
+      padding: 20px;
+    }
+
+    .education-section {
+      background-color: #fff0f5;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .education-section h2 {
+      color: #e91e63;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .timeline-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .circle {
+      width: 18px;
+      height: 18px;
+      background-color: #e91e63;
+      border-radius: 50%;
+    }
+
+    .timeline-content h3 {
+      font-size: 18px;
+      color: #c2185b;
+      margin: 0;
+    }
+
+    .timeline-content p {
+      color: #555;
+      font-size: 14px;
+      margin: 2px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-title">📚 Perjalanan Pendidikan</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="daftar tugas.html">📚 Daftar Tugas</a></li>
+        <li><a href="pendidikan.html">🎓 Pendidikan</a></li>
+        <li><a href="media sosial.html">💖 Media Sosial</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="wrapper">
+    <section class="education-section">
+      <h2>— PERJALANAN PENDIDIKAN —</h2>
+      <br><br>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="timeline-content">
+            <h3>SDN 01 Marga Kencana</h3>
+            <p>2011 - 2016</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="timeline-content">
+            <h3>SMPN 01 Tulang Bawang Udik</h3>
+            <p>2017 - 2019</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="timeline-content">
+            <h3>SMAN 01 Tumijajar</h3>
+            <p>2020 - 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

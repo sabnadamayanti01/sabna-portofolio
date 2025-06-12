@@ -1,0 +1,220 @@
+/* =========================================================================
+   RESET DAN DASAR
+   ========================================================================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #ffe6f0;
+    color: #f80981;
+    scroll-behavior: smooth;
+  }
+  
+  /* =========================================================================
+     HEADER (Digunakan di Semua Halaman)
+     ========================================================================= */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8bbd0;
+    padding: 20px 40px;
+    width: 100%;
+    border-bottom: 5px dotted #e91e63;
+  }
+  
+  .header-left h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    background-color: #ff5db1;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    background-color: #ff3399;
+  }
+  
+  /* =========================================================================
+     BERANDA (HOME)
+     ========================================================================= */
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    background: #ffe4ec;
+    flex-wrap: wrap;
+  }
+  
+  .intro-text {
+    max-width: 600px;
+  }
+  
+  .intro-text h2 {
+    font-size: 32px;
+    color: #d63384;
+    margin-bottom: 15px;
+  }
+  
+  .intro-text p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .intro-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff69b4;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  
+  /* =========================================================================
+     DAFTAR TUGAS
+     ========================================================================= */
+  .card-section {
+    padding: 40px 20px;
+    background: #ffd6e0;
+    text-align: center;
+  }
+  
+  .card {
+    background: #fff0f6;
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    font-size: 18px;
+    color: #d63384;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card i {
+    margin-right: 10px;
+  }
+  
+  /* =========================================================================
+     PENDIDIKAN
+     ========================================================================= */
+  .education-section {
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .education-section h2 {
+    color: #e91e63;
+    margin-bottom: 10px;
+  }
+  
+  .title-pink {
+    color: #e7abd7;
+    margin-bottom: 20px;
+  }
+  
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #e91e63;
+    border-radius: 50%;
+  }
+  
+  .timeline-content h3 {
+    font-size: 18px;
+    color: #c2185b;
+  }
+  
+  .timeline-content p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /* =========================================================================
+     FOOTER (JIKA ADA)
+     ========================================================================= */
+  footer {
+    background-color: #f8bbd0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  
+  /* =========================================================================
+     MEDIA RESPONSIVE
+     ========================================================================= */
+  @media (max-width: 768px) {
+    .intro {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro-text, .intro-image {
+      margin-bottom: 20px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  body.dark-mode {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+  }
+  
+  body.light-mode {
+    background-color: #fff0f6;
+    color: #222;
+  }
+  

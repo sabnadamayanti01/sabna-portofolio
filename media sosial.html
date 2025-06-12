@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Sosial Meita Ayu Sabna Damayanti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* RESET & DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4f1;
+      color: #fe056d;
+    }
+
+    /* HEADER & NAVBAR */
+    header {
+      background-color: #f8bbd0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px dashed #fff;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff1493;
+    }
+
+    /* MAIN SECTION */
+    .main-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #fff0f5;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+      text-align: center;
+    }
+
+    .main-container h2 {
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    .social-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .social-item {
+      width: 160px;
+      background-color: #fff;
+      border: 2px solid #ffb6c1;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+    }
+
+    .social-item img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+
+    .social-item a {
+      text-decoration: none;
+      color: #d81b60;
+      font-weight: bold;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .social-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">📱 Media Sosial</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="daftar tugas.html">📚 Daftar Tugas</a></li>
+        <li><a href="pendidikan.html">🎓 Pendidikan</a></li>
+        <li><a href="media sosial.html">💖 Media Sosial</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-container">
+    <h2>Temukan Saya di Media Sosial</h2>
+    <p>Yuk terkoneksi! Klik ikon di bawah untuk melihat akun saya.</p>
+
+    <div class="social-list">
+      <div class="social-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram">
+        <a href="https://www.instagram.com/meitaayusabna?igsh=MTlvbHR1cnF4aTloMA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+      </div>
+      <div class="social-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <a href="https://wa.me/628**********" target="_blank">Chat WA</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

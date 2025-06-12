@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Meita Ayu Sabna Damayanti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & DASAR */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4f1;
+      color: #fb0872;
+    }
+
+    /* HEADER & NAVBAR */
+    header {
+      background-color: #f8bbd0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px dashed #fff;
+      
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fafafa;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background-color: #ff69b4;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff1493;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 60px 50px;
+    }
+
+    .text-container {
+      max-width: 600px;
+    }
+
+    .sub-title {
+      color: #d46aa8;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .green {
+      color: #f31295;
+    }
+
+    .desc {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+    }
+
+    .image-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid pink;
+      box-shadow: 0 0 15px pink;
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">📌 HELOOO!!!!!</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="daftar tugas.html">📚 Daftar Tugas</a></li>
+        <li><a href="pendidikan.html">🎓 Pendidikan</a></li>
+        <li><a href="media sosial.html">💖 Media Sosial</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="hero">
+    <div class="text-container">
+      <p class="sub-title">— PERKENALKAN SAYA</p>
+      <h2><span class="green">Meita Ayu</span> Sabna Damayanti</h2>
+      <p class="desc">
+        Saya Seorang Mahasiswa Universitas Lampung Angkatan 2022, Fakultas Matematika dan Ilmu Pengetahuan Alam,
+        Jurusan Ilmu Komputer, Program Studi S1 Ilmu Komputer.
+      </p>
+    </div>
+
+    <div class="image-container">
+      <img id="slider" src="image/foto meita.jpeg" alt="Foto Meita" />
+    </div>
+  </main>
+
+  <!-- SLIDER SCRIPT -->
+  <script>
+    const imageList = [
+      "image/foto meita.jpeg",
+      "image/foto ayu.jpeg",
+      "image/foto sabna.jpeg",
+      "image/foto damayanti.jpeg"
+    ];
+
+    let index = 0;
+    const imgElement = document.getElementById("slider");
+
+    setInterval(() => {
+      index = (index + 1) % imageList.length;
+      imgElement.src = imageList[index];
+    }, 2500);
+  </script>
+</script>
+
+
+</body>
+</html>

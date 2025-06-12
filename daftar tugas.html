@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daftar Tugas - Meita</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px dashed white;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #d63384;
+      font-size: 26px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff69b4;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ff85c1;
+    }
+
+    .container {
+      padding: 40px;
+    }
+
+    .card {
+      background-color: #ffe4ec;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 2px solid #ffcce0;
+    }
+
+    .card h2 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #cc1177;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 40px;
+      background-color: #fff0fa;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px dashed #ff69b4;
+    }
+
+    form input[type="text"] {
+      padding: 10px;
+      margin: 10px 10px 10px 0;
+      width: 45%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #ff1493;
+    }
+
+    #pdfInfo {
+      margin-top: 10px;
+      color: #cc1177;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>📋 Daftar Tugas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="daftar-tugas.html">📚 Daftar Tugas</a></li>
+        <li><a href="pendidikan.html">🎓 Pendidikan</a></li>
+        <li><a href="media-sosial.html">💖 Media Sosial</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTAINER -->
+  <div class="container">
+    <!-- LIST TUGAS -->
+    <div id="tugas-list">
+      <div class="card">
+        <h2>📘 Tugas 1 - Tokoh Perintis Grafika Komputer</h2>
+        <a href="https://youtu.be/ldKyDP2SGjs?si=5PWY4cZkHyasmp-W" target="_blank">🎥 Tonton di YouTube</a>
+      </div>
+      <div class="card">
+        <h2>📗 Tugas 2 - Tugas Pembentukan Garis Menggunakan Algoritma Bresenham dan DDA  
+        </h2>
+        <a href="pdf/2257051014_Tugas2_Meita.pdf" target="_blank">📄 Lihat File PDF</a>
+      </div>
+      <div class="card">
+        <h2>🖌️ Tugas 3 - Tugas Pembentukan Lingkaran dengan Algoritma Bresenham dan Midpoint
+        </h2>
+        <a href="pdf/Meita Ayu Sabna Damayanti_2257051014_Tugas3Grafikom.pdf" target="_blank">📄 Lihat File PDF</a>
+      </div>
+
+      <div class="card">
+        <h2>🧩 Tugas 4 - Grafika Komputer Algoritma Pembentuk Kurva
+        </h2>
+        <a href="pdf/Meita Ayu Sabna Damayanti_2217051014_Tugas 4 Algoritma Pembentukan Kurva .pdf" target="_blank">📄 Lihat File PDF</a>
+      </div>
+      <div class="card">
+        <h2>☀️ latihan cohen clip
+        </h2>
+        <a href="pdf/LATIHAN Cohen Clip - 2257051014 (1).xlsx" target="_blank">📄 Lihat File PDF</a>
+      </div>
+      <div class="card">
+        <h2>☀️ latihan Polygon clipping
+        </h2>
+        <a href="pdf/2257051014_Latihan polygon clipping.pdf" target="_blank">📄 Lihat File PDF</a>
+      </div>
+      <div class="card">
+        <h2>🧠 Kuis 1 - tentang persamaan kuadrat yang diberikan, menggunakan pemrograman javascript dalam grafika komputer.          
+          (x² + y² – 1)³ = x² y³</h2>
+        <a href="https://youtu.be/JET8qy5MNHg?si=LDh5RHyHMm3MuAvw" target="_blank">🎥 Tonton di YouTube</a>
+
+      </div>
+
+      <div class="card">
+        <h2>🔍 Kuis 2 - Transformasi 2D </h2>
+        <a href="https://youtu.be/DnA39e7gaQQ" target="_blank">🎥 Tonton di YouTube</a>
+
+      </div>
+
+      <div class="card">
+        <h2>🎯 Kuis 3 - Algortma Clipping & Viewport</h2>
+        <a href="https://youtu.be/WrU5NSlEWRs" target="_blank">🎥 Tonton di YouTube</a>
+      </div>
+      <div class="card">
+        <h2>🌈 Kuis 4 - Algoritma Polygon Clipping</h2>
+        <a href="https://youtu.be/6wQ9yclqpqg" target="_blank">🎥 Tonton di YouTube</a>
+      </div>
+
+    </div>
+
+    <!-- FORM INPUT -->
+    <form id="tugas-form">
+      <h3>➕ Tambah Tugas Baru</h3>
+      <input type="text" id="namaTugas" placeholder="Nama Tugas" required />
+      <input type="text" id="linkTugas" placeholder="Link YouTube" required />
+      <button type="submit">Tambahkan</button>
+    </form>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    // Tambah tugas baru manual
+    document.getElementById('tugas-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const nama = document.getElementById('namaTugas').value;
+      const link = document.getElementById('linkTugas').value;
+
+      if (nama && link) {
+        const tugasList = document.getElementById('tugas-list');
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        card.innerHTML = `
+          <h2>📄 ${nama}</h2>
+          <a href="${link}" target="_blank">🎥 Tonton di YouTube</a>
+        `;
+
+        tugasList.appendChild(card);
+
+        document.getElementById('tugas-form').reset();
+      }
+    });
+
+    // Upload Tugas 2 PDF
+    const uploadInput = document.getElementById("uploadTugas2");
+    const info = document.getElementById("pdfInfo");
+
+    uploadInput.addEventListener("change", () => {
+      const file = uploadInput.files[0];
+      if (file && file.type === "application/pdf") {
+        info.textContent = `✅ File terpilih: ${file.name}`;
+      } else {
+        info.textContent = "❌ File harus berupa PDF.";
+        uploadInput.value = ""; // reset file input
+      }
+    });
+  </script>
+
+</body>
+</html>
